@@ -44,7 +44,7 @@ class StackArray<T>() {
                 if (index != top) {
                     print("$item, ")
                 } else {
-                    print(item)
+                    println(item)
                 }
             }
         }
