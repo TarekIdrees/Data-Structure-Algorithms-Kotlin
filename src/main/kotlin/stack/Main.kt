@@ -33,4 +33,12 @@ fun main() {
     println("Is stack empty: ${stackLinkedList.isEmpty()}")
     println("Stack elements:")
     stackLinkedList.print()
+
+    println("---------------------------------------------")
+    println("------------------Balanced Parentheses Test-----------------------")
+    val expression = "9+5(2-1){}]"
+    if (areBalanced(expression))
+        println("Expression are balanced")
+    else
+        println("Expression are not balanced")
 }
