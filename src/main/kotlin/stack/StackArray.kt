@@ -7,8 +7,8 @@ class StackArray<T>() {
     private val items = mutableListOf<T>()
 
     fun push(item: T) {
+        items.add(item)
         top++
-        items.add(top, item)
     }
 
     fun pop() {
@@ -20,11 +20,20 @@ class StackArray<T>() {
         }
     }
 
+    fun pop(item: T) {
+        if (items.contains(item)) {
+            items.remove(item)
+            top--
+        } else {
+            println("item not found to be removed !")
+        }
+    }
+
     fun peek(): T {
         return try {
             items[top]
         } catch (e: Exception) {
-            throw Exception("Stack is empty")
+            throw Exception("Stack is empty to be peeked")
         }
     }
 
@@ -38,7 +47,7 @@ class StackArray<T>() {
 
     fun print() {
         if (isEmpty()) {
-            print("Stack is empty")
+            println("Stack is empty to be printed !")
         } else {
             items.reversed().forEachIndexed { index, item ->
                 if (index != top) {

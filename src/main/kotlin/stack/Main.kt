@@ -6,14 +6,17 @@ fun main() {
     println("------------------Stack Array Test-----------------------")
     stackArray.push("Element 1")
     stackArray.push("Element 2")
+    stackArray.push("Element 2.5")
     stackArray.push("Element 3")
 
     println("Peek: ${stackArray.peek()}")
     println("Pop: ${stackArray.pop()}")
+    println("Pop specific item:${stackArray.pop("Element 1")} ")
+    println("Pop specific item:${stackArray.pop("Element 00000")} ")
     println("Peek after pop: ${stackArray.peek()}")
     println("Is stack empty: ${stackArray.isEmpty()}")
     println("Stack size: ${stackArray.size()}")
-    println("Stack elements:")
+    print("Stack elements: ")
     stackArray.print()
 
     println("---------------------------------------------")
