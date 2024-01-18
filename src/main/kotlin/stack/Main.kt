@@ -35,10 +35,24 @@ fun main() {
     stackLinkedList.print()
 
     println("---------------------------------------------")
+
     println("------------------Balanced Parentheses Test-----------------------")
     val expression = "9+5(2-1){}]"
     if (areBalanced(expression))
         println("Expression are balanced")
     else
         println("Expression are not balanced")
+
+
+    println("---------------------------------------------")
+
+    println("------------------Expression Evaluation Test-----------------------")
+    val expressionTest = "52+3*"
+    val expressionTestTwo = "%52+3*"
+    val expressionTestThree = "523"
+    val expressionTestFour = "52+3*%&&"
+    println(calculatePostfix(expressionTest))
+    println(calculatePostfix(expressionTestTwo))
+    println(calculatePostfix(expressionTestThree))
+    println(calculatePostfix(expressionTestFour))
 }
