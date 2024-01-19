@@ -49,6 +49,6 @@ private fun preformOperation(operandOne: Double, operandTwo: Double, operator: C
     }
 }
 
-private fun isOperator(item: Char): Boolean {
+fun isOperator(item: Char): Boolean {
     return item in OPERATORS
 }

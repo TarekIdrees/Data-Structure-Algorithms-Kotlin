@@ -48,11 +48,19 @@ fun main() {
 
     println("------------------Expression Evaluation Test-----------------------")
     val expressionTest = "52+3*"
-    val expressionTestTwo = "%52+3*"
-    val expressionTestThree = "523"
-    val expressionTestFour = "52+3*%&&"
+//    val expressionTestTwo = "%52+3*"
+//    val expressionTestThree = "523"
+//    val expressionTestFour = "52+3*%&&"
     println(calculatePostfix(expressionTest))
-    println(calculatePostfix(expressionTestTwo))
-    println(calculatePostfix(expressionTestThree))
-    println(calculatePostfix(expressionTestFour))
+//    println(calculatePostfix(expressionTestTwo))
+//    println(calculatePostfix(expressionTestThree))
+//    println(calculatePostfix(expressionTestFour))
+
+    println("---------------------------------------------")
+
+    println("------------------Infix to Postfix Test-----------------------")
+    val infixExpression = "a+b*c-(d/e+f)"
+    val postfixExpression = infixToPostfix(infixExpression)
+    println("Infix Expression: $infixExpression")
+    println("Postfix Expression: $postfixExpression")
 }
