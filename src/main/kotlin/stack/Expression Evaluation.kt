@@ -24,7 +24,7 @@ fun calculatePostfix(expression: String): Double {
     return stack.peek().toDouble()
 }
 
-fun checkExpressionValidation(expression: String) {
+private fun checkExpressionValidation(expression: String) {
     if (isOperator(expression.first())) {
         throw Exception("Not allowed to start with operator !")
     }
@@ -36,7 +36,7 @@ fun checkExpressionValidation(expression: String) {
     }
 }
 
-fun preformOperation(operandOne: Double, operandTwo: Double, operator: Char): String {
+private fun preformOperation(operandOne: Double, operandTwo: Double, operator: Char): String {
     return when (operator) {
         '-' -> (operandOne - operandTwo).toString()
         '+' -> (operandOne + operandTwo).toString()
@@ -49,6 +49,6 @@ fun preformOperation(operandOne: Double, operandTwo: Double, operator: Char): St
     }
 }
 
-fun isOperator(item: Char): Boolean {
+private fun isOperator(item: Char): Boolean {
     return item in OPERATORS
 }
