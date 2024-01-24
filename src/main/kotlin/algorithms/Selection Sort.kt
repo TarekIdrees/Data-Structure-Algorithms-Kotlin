@@ -5,14 +5,9 @@ fun <T : Comparable<T>> selectionSort(array: Array<T>, ascending: Boolean = true
     for (index in array.indices) {
         judgeIndex = index
         for (i in index + 1 until array.size) {
-            if (!ascending) {
-                if (array[i] > array[judgeIndex]) {
-                    judgeIndex = i
-                }
-            } else {
-                if (array[i] < array[judgeIndex]) {
-                    judgeIndex = i
-                }
+            val comparisonResult = array[i].compareTo(array[judgeIndex])
+            if ((ascending && comparisonResult < 0) || (!ascending && comparisonResult > 0)) {
+                judgeIndex = i
             }
         }
         val temp = array[index]
