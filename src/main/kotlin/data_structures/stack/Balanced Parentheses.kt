@@ -1,4 +1,4 @@
-package stack
+package data_structures.stack
 
 fun arePair(open: Char, closed: Char): Boolean {
     return if (open == '(' && closed == ')') {

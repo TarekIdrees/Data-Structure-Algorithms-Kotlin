@@ -1,4 +1,4 @@
-package stack
+package data_structures.stack
 
 
 private fun precedence(operator: Char): Int {

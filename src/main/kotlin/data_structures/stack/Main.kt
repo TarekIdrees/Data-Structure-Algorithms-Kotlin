@@ -1,4 +1,4 @@
-package stack
+package data_structures.stack
 
 fun main() {
     val stackArray = StackArray<String>()
