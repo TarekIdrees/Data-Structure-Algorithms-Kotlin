@@ -1,6 +1,6 @@
 package algorithms
 
-fun <T : Comparable<T>> bubbleSort(array: Array<T>,ascending: Boolean = true): Array<T> {
+    fun <T : Comparable<T>> bubbleSort(array: Array<T>,ascending: Boolean = true): Array<T> {
     var isSorted = true
     for (i in array.indices) {
         for (j in 0 until array.size - i - 1) {
