@@ -5,8 +5,12 @@ fun main() {
     //array = selectionSort(array,true)
     //array = bubbleSort(array,false)
     // array = insertionSort(array,false)
-    val sortedArray = mergeSort(array.toIntArray())
-    sortedArray.forEach {
+   // val sortedArray = mergeSort(array.toIntArray())
+//    sortedArray.forEach {
+//        print("$it,")
+//    }
+    array = quickSort(array,0,array.lastIndex, ascending = true)
+    array.forEach {
         print("$it,")
     }
 }
