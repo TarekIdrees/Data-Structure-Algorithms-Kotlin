@@ -10,9 +10,7 @@ fun <T : Comparable<T>> selectionSort(array: Array<T>, ascending: Boolean = true
                 judgeIndex = i
             }
         }
-        val temp = array[index]
-        array[index] = array[judgeIndex]
-        array[judgeIndex] = temp
+        swap(array,index,judgeIndex)
     }
     return array
 }
