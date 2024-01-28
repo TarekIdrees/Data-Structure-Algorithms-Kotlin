@@ -1,4 +1,4 @@
-package algorithms
+package algorithms.sorting
 
 fun main() {
     var array = arrayOf(80, 20, 70, 90, 2, 55)
