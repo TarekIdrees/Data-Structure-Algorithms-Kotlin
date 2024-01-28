@@ -1,4 +1,6 @@
-package algorithms
+package algorithms.sorting
+
+import algorithms.swap
 
 fun <T : Comparable<T>> quickSort(array: Array<T>, l: Int, h: Int,ascending: Boolean = true): Array<T> {
     if (l < h) {

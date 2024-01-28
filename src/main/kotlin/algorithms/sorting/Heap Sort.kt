@@ -1,4 +1,6 @@
-package algorithms
+package algorithms.sorting
+
+import algorithms.swap
 
 fun <T : Comparable<T>> heapSort(array: Array<T>, ascending: Boolean = true): Array<T> {
     buildHeap(array, array.size, ascending)

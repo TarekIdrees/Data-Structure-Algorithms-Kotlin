@@ -1,4 +1,4 @@
-package algorithms
+package algorithms.sorting
 
 fun <T : Comparable<T>> insertionSort(array: Array<T>, ascending: Boolean = true): Array<T> {
     var key: T
