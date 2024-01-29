@@ -18,4 +18,9 @@ fun main() {
 
     println("BFS traversal:")
     bfs(graph, 5)
+
+    val visited = mutableSetOf<Int>()
+
+    println("DFS traversal:")
+    dfs(graph, 1, visited)
 }
